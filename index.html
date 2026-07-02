@@ -1,1 +1,102 @@
-<h1>ola mundo</h1>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encurtador de Links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stilos.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="estrutura-aplicativo">
+      <section class="area-principal" aria-labelledby="tituloPagina">
+        <div class="linha-marca">
+          <div class="simbolo-marca" aria-hidden="true">S</div>
+          <span>Shortly</span>
+        </div>
+
+        <div class="introducao">
+          <p class="destaque">Encurtador inteligente</p>
+          <h1 id="tituloPagina">
+            Transforme URLs longas em links curtos e prontos para compartilhar.
+          </h1>
+          <p class="subtitulo">
+            Cole uma URL, gere um link compacto e copie o resultado em segundos.
+          </p>
+        </div>
+
+        <form class="formulario-encurtador" id="formularioEncurtador">
+          <label for="campoUrl">URL original</label>
+          <div class="linha-campo">
+            <input
+              id="campoUrl"
+              name="campoUrl"
+              type="url"
+              placeholder="https://exemplo.com/minha-pagina-com-url-grande"
+              autocomplete="url"
+              required
+            />
+            <button type="submit">
+              <span>Encurtar</span>
+            </button>
+          </div>
+          <p class="dica" id="mensagemStatus">
+            Use uma URL completa começando com http:// ou https://.
+          </p>
+        </form>
+
+        <section
+          class="painel-resultado"
+          id="painelResultado"
+          aria-live="polite"
+          hidden
+        >
+          <div>
+            <span class="rotulo-resultado">Link curto</span>
+            <a id="linkCurto" href="#" target="_blank" rel="noreferrer"
+              >sho.rt/abc123</a
+            >
+          </div>
+          <div class="acoes">
+            <button class="botao-secundario" type="button" id="botaoCopiar">
+              Copiar
+            </button>
+            <a
+              class="botao-abrir"
+              id="linkAbrir"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+              >Abrir</a
+            >
+          </div>
+        </section>
+      </section>
+
+      <aside class="painel-estatisticas" aria-label="Vantagens">
+        <div class="metrica">
+          <strong>1 clique</strong>
+          <span>para copiar o link</span>
+        </div>
+        <div class="metrica">
+          <strong>URLs limpas</strong>
+          <span>para redes sociais, campanhas e QR codes</span>
+        </div>
+        <div class="cartao-previa">
+          <span class="etiqueta-previa">Previa</span>
+          <div class="linha-previa maior"></div>
+          <div class="linha-previa"></div>
+          <div class="url-previa">short.ly/campanha</div>
+        </div>
+      </aside>
+    </main>
+
+    
+  </body>
+</html>
