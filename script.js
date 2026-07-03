@@ -8,10 +8,11 @@ const mensagemStatus = document.querySelector("#mensagemStatus");
 
 // Se o Worker estiver em outro dominio, coloque a URL dele aqui.
 // Exemplo: const URL_BASE_WORKER = "https://meu-worker.seu-usuario.workers.dev";
-const URL_BASE_WORKER = "";
+const URL_BASE_WORKER = "https://encurtador-de-links-worker.bruno-maciel77777.workers.dev";
+
 
 formulario.addEventListener("submit", async (evento) => {
-    
+
   evento.preventDefault();
 
   const urlOriginal = campoUrl.value.trim();
@@ -50,6 +51,8 @@ formulario.addEventListener("submit", async (evento) => {
     botaoEnviar.querySelector("span").textContent = "Encurtar";
   }
 });
+
+
 
 botaoCopiar.addEventListener("click", async () => {
   await navigator.clipboard.writeText(linkCurto.textContent);
