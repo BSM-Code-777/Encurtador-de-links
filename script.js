@@ -10,7 +10,7 @@ const mensagemStatus = document.querySelector("#mensagemStatus");
 
 
 
-const URL_BASE_WORKER = "https://encurtador-de-links-worker.bruno-maciel.workers.dev"; // endereço do Worker. // Em vez de escrever esse endereço várias vezes no código, guarda em uma variável.
+const URL_BASE_WORKER = "https://encurtador-de-links-worker.bruno-maciel77777.workers.dev"; // endereço do Worker. // Em vez de escrever esse endereço várias vezes no código, guarda em uma variável.
 
 
 
